@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1122F57626ABCF5500C03CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F57526ABCF5500C03CD6 /* AppDelegate.swift */; };
 		1122F57826ABCF5500C03CD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F57726ABCF5500C03CD6 /* SceneDelegate.swift */; };
-		1122F57A26ABCF5500C03CD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F57926ABCF5500C03CD6 /* ViewController.swift */; };
+		1122F57A26ABCF5500C03CD6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F57926ABCF5500C03CD6 /* FirstViewController.swift */; };
 		1122F57D26ABCF5500C03CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122F57B26ABCF5500C03CD6 /* Main.storyboard */; };
 		1122F58026ABCF5500C03CD6 /* KnowYourRelations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1122F57E26ABCF5500C03CD6 /* KnowYourRelations.xcdatamodeld */; };
 		1122F58226ABCF5700C03CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122F58126ABCF5700C03CD6 /* Assets.xcassets */; };
@@ -25,6 +25,13 @@
 		1122F5C326ABD24000C03CD6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F5C126ABD24000C03CD6 /* BaseNavigationController.swift */; };
 		1122F5CA26ABD31600C03CD6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F5C926ABD31600C03CD6 /* SecondViewController.swift */; };
 		1122F5D226ABD39200C03CD6 /* AppDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F5D126ABD39200C03CD6 /* AppDelegateService.swift */; };
+		1122F5E026ABD82E00C03CD6 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F5DF26ABD82E00C03CD6 /* MainNavigationController.swift */; };
+		1122F5FC26ABF38100C03CD6 /* MainNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F5FB26ABF38100C03CD6 /* MainNavigationViewModel.swift */; };
+		1122F60D26ABF7F600C03CD6 /* MainNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F60C26ABF7F600C03CD6 /* MainNavigationCoordinator.swift */; };
+		1122F61A26AC026100C03CD6 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F61926AC026100C03CD6 /* FirstViewModel.swift */; };
+		1122F62226AC02E700C03CD6 /* FirstViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F62126AC02E700C03CD6 /* FirstViewCoordinator.swift */; };
+		1122F63026AC0B9B00C03CD6 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F62F26AC0B9B00C03CD6 /* SecondViewModel.swift */; };
+		1122F63526AC0D1900C03CD6 /* SecondViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122F63426AC0D1900C03CD6 /* SecondViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +55,7 @@
 		1122F57226ABCF5500C03CD6 /* KnowYourRelations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourRelations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1122F57526ABCF5500C03CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1122F57726ABCF5500C03CD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1122F57926ABCF5500C03CD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1122F57926ABCF5500C03CD6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1122F57C26ABCF5500C03CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1122F57F26ABCF5500C03CD6 /* KnowYourRelations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowYourRelations.xcdatamodel; sourceTree = "<group>"; };
 		1122F58126ABCF5700C03CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +76,13 @@
 		1122F5C126ABD24000C03CD6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		1122F5C926ABD31600C03CD6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1122F5D126ABD39200C03CD6 /* AppDelegateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateService.swift; sourceTree = "<group>"; };
+		1122F5DF26ABD82E00C03CD6 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		1122F5FB26ABF38100C03CD6 /* MainNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewModel.swift; sourceTree = "<group>"; };
+		1122F60C26ABF7F600C03CD6 /* MainNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationCoordinator.swift; sourceTree = "<group>"; };
+		1122F61926AC026100C03CD6 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		1122F62126AC02E700C03CD6 /* FirstViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewCoordinator.swift; sourceTree = "<group>"; };
+		1122F62F26AC0B9B00C03CD6 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		1122F63426AC0D1900C03CD6 /* SecondViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +135,14 @@
 			children = (
 				1122F57526ABCF5500C03CD6 /* AppDelegate.swift */,
 				1122F57726ABCF5500C03CD6 /* SceneDelegate.swift */,
-				1122F57926ABCF5500C03CD6 /* ViewController.swift */,
 				1122F57B26ABCF5500C03CD6 /* Main.storyboard */,
 				1122F5AB26ABD12A00C03CD6 /* Dependency */,
 				1122F5B426ABD13F00C03CD6 /* Coordinators */,
 				1122F5B626ABD13F00C03CD6 /* Protocols */,
+				1122F5DD26ABD5F700C03CD6 /* Extenstions */,
+				1122F5DC26ABD5E700C03CD6 /* Helper */,
 				1122F5BF26ABD24000C03CD6 /* BASE */,
-				1122F5C726ABD2E400C03CD6 /* VC */,
+				1122F5DE26ABD7F900C03CD6 /* MainNavigationController */,
 				1122F58126ABCF5700C03CD6 /* Assets.xcassets */,
 				1122F58326ABCF5700C03CD6 /* LaunchScreen.storyboard */,
 				1122F58626ABCF5700C03CD6 /* Info.plist */,
@@ -201,6 +216,9 @@
 		1122F5C726ABD2E400C03CD6 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				1122F61926AC026100C03CD6 /* FirstViewModel.swift */,
+				1122F57926ABCF5500C03CD6 /* FirstViewController.swift */,
+				1122F62126AC02E700C03CD6 /* FirstViewCoordinator.swift */,
 				1122F5C826ABD2F200C03CD6 /* SecondViewController */,
 			);
 			path = VC;
@@ -210,8 +228,35 @@
 			isa = PBXGroup;
 			children = (
 				1122F5C926ABD31600C03CD6 /* SecondViewController.swift */,
+				1122F63426AC0D1900C03CD6 /* SecondViewCoordinator.swift */,
+				1122F62F26AC0B9B00C03CD6 /* SecondViewModel.swift */,
 			);
 			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		1122F5DC26ABD5E700C03CD6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1122F5DD26ABD5F700C03CD6 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		1122F5DE26ABD7F900C03CD6 /* MainNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				1122F60C26ABF7F600C03CD6 /* MainNavigationCoordinator.swift */,
+				1122F5FB26ABF38100C03CD6 /* MainNavigationViewModel.swift */,
+				1122F5DF26ABD82E00C03CD6 /* MainNavigationController.swift */,
+				1122F5C726ABD2E400C03CD6 /* VC */,
+			);
+			path = MainNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +390,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1122F5CA26ABD31600C03CD6 /* SecondViewController.swift in Sources */,
-				1122F57A26ABCF5500C03CD6 /* ViewController.swift in Sources */,
+				1122F57A26ABCF5500C03CD6 /* FirstViewController.swift in Sources */,
 				1122F5AF26ABD12A00C03CD6 /* DependencyContainer.swift in Sources */,
+				1122F63026AC0B9B00C03CD6 /* SecondViewModel.swift in Sources */,
 				1122F58026ABCF5500C03CD6 /* KnowYourRelations.xcdatamodeld in Sources */,
+				1122F5E026ABD82E00C03CD6 /* MainNavigationController.swift in Sources */,
 				1122F5B026ABD12A00C03CD6 /* ViewModelFactory.swift in Sources */,
 				1122F57626ABCF5500C03CD6 /* AppDelegate.swift in Sources */,
+				1122F60D26ABF7F600C03CD6 /* MainNavigationCoordinator.swift in Sources */,
+				1122F62226AC02E700C03CD6 /* FirstViewCoordinator.swift in Sources */,
 				1122F5D226ABD39200C03CD6 /* AppDelegateService.swift in Sources */,
+				1122F5FC26ABF38100C03CD6 /* MainNavigationViewModel.swift in Sources */,
+				1122F61A26AC026100C03CD6 /* FirstViewModel.swift in Sources */,
+				1122F63526AC0D1900C03CD6 /* SecondViewCoordinator.swift in Sources */,
 				1122F5C226ABD24000C03CD6 /* BaseViewController.swift in Sources */,
 				1122F57826ABCF5500C03CD6 /* SceneDelegate.swift in Sources */,
 				1122F5C326ABD24000C03CD6 /* BaseNavigationController.swift in Sources */,

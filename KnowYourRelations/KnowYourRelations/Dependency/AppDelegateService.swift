@@ -38,13 +38,13 @@ class AppDelegateService {
     // MARK: Public methods
     
     func setupAppCoordinator() {
-        window.rootViewController = BaseNavigationController()
-        guard let rootNavigationController = window.rootViewController as? UINavigationController else {
-            fatalError("Root viewController must be inherited from UINavigationController")
-        }
+//        window.rootViewController = BaseNavigationController()
+//        guard let rootNavigationController = window.rootViewController as? UINavigationController else {
+//            fatalError("Root viewController must be inherited from UINavigationController")
+//        }
         dependencyContainer = DependencyContainer()
 
-        appCoordinator = AppCoordinator(navigationController: rootNavigationController, dependencyContainer: dependencyContainer)
+        appCoordinator = AppCoordinator( window: window, dependencyContainer: dependencyContainer)
         appCoordinator.start()
         window.makeKeyAndVisible()
     }

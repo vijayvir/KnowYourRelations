@@ -12,29 +12,36 @@ import UIKit
 /// Determines, what flow must be shown based on the rules.
 class AppCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
-    
-    var navigationController: UINavigationController?
+    private let window: UIWindow
     private let dependencyContainer: DependencyContainer
-    init(navigationController: UINavigationController , dependencyContainer: DependencyContainer) {
-        self.navigationController = navigationController
+    init( window: UIWindow, dependencyContainer: DependencyContainer) {
+       
+        self.window = window
         self.dependencyContainer = dependencyContainer
     }
     
     func start() {
-        print(#file)
-        
-        let some = ViewController.instantiateSB()
+        childCoordinators = []
+       // let some = FirstViewController.instantiateSB()
        // navigationController?.pushViewController(vc, animated: true)
+        configureMainCoordinator()
+    }
+    func configureMainCoordinator(){
+        
+        let mainTabBarCoordinator = self.dependencyContainer.makeMainTabBarCoordinator(window: self.window)
+        mainTabBarCoordinator.owner = self
+        mainTabBarCoordinator.start()
+        self.childCoordinators += [mainTabBarCoordinator]
     }
     
 }
-extension AppCoordinator : ViewControllerOwner {
-    func vc_didTapOnFirstFunction() {
-        let vc: SecondViewController = SecondViewController.instantiateSB()
-        navigationController?.pushViewController(vc, animated: true)
+
+extension AppCoordinator : MainNavigationOwner {
+    func mn_FirstTap() {
+        
     }
     
-    func vc_didTapOnSecondFunction() {
+    func mn_SeondTap() {
         
     }
     

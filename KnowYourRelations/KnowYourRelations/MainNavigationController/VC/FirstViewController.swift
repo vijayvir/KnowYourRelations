@@ -6,27 +6,23 @@
 //
 
 import UIKit
-protocol ViewControllerOwner {
-    
-    func vc_didTapOnFirstFunction()
-    func vc_didTapOnSecondFunction()
-}
-class ViewController: UIViewController {
-    var owner : ViewControllerOwner?
+
+class FirstViewController: UIViewController {
+    var viewModel: FirstViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        debugPrint("\(#function) at \(self)")
+       // debugPrint("\(#function) at \(self)")
     }
     @IBAction func actionTap() {
-        owner?.vc_didTapOnFirstFunction()
+        viewModel.didClickOnButton()
     }
 
 }
 
-extension ViewController : Storyboarded {
+extension FirstViewController : Storyboarded {
     static func storyboarded() -> (storyboardName: String, id: String) {
-        ("Main","ViewController")
+        ("Main","FirstViewController")
     }
     
     

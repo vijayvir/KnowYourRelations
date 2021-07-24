@@ -19,10 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      
             appDelegateService = AppDelegateService(window: window)
             appDelegateService.setupAppCoordinator()
-      
+            self.window = window
 
-                self.window = window
-                window.makeKeyAndVisible()
+            
+    
     }
     }
     func access1(){
